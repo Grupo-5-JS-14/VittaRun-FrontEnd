@@ -5,7 +5,6 @@ import {
   Lock,
   Phone,
   ArrowRight,
-  Salad,
 } from "lucide-react";
 
 
