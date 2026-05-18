@@ -1,11 +1,5 @@
 import { useState } from "react";
-import {
-  User,
-  Mail,
-  Lock,
-  Phone,
-  ArrowRight,
-} from "lucide-react";
+import {  User,  Mail,  Lock,  Phone,  ArrowRight,} from "lucide-react";
 
 
 function Login() {
