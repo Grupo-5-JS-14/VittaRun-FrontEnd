@@ -1,4 +1,5 @@
 import { MapPin, Salad, User } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -16,18 +17,25 @@ function Navbar() {
           </div>
         </div>
 
+        
         <ul className="flex items-center justify-center gap-10 text-gray-900 font-medium">
+        <Link to="/home">
           <li className="text-green-700 border-b-2 border-green-700 pb-1 cursor-pointer hover:text-green-700">
             Início
           </li>
+        </Link>
 
+        <Link to="/lojas">
           <li className="cursor-pointer hover:text-green-700">
             Lojas
           </li>
+        </Link>
 
+        <Link to="/sobre">
           <li className="cursor-pointer hover:text-green-700">
-            Sobre nós
+            Sobre
           </li>
+        </Link>
         </ul>
 
         <div className="flex items-center justify-end gap-6">

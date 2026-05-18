@@ -1,5 +1,6 @@
 import { Salad } from "lucide-react";
 import Grupo05 from "../grupo05/Grupo05";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -11,13 +12,17 @@ function Footer() {
           <div className="flex flex-col gap-4">
             <h3 className="font-bold text-gray-900">VittaRun</h3>
 
+            <Link to="/home">
             <a href="#" className="hover:text-green-700 transition">
               Início
             </a>
+            </Link>
 
+            <Link to="/about">
             <a href="#" className="hover:text-green-700 transition">
               Sobre nós
             </a>
+            </Link>
 
             <a href="#" className="hover:text-green-700 transition">
               Carreiras
