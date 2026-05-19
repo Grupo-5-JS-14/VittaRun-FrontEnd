@@ -19,7 +19,7 @@ function Footer() {
               Início
             </Link>
 
-            <Link to="/about" className="hover:text-[#FF5F1F] font-bold text-sm uppercase tracking-wide transition-colors">
+            <Link to="/sobre" className="hover:text-[#FF5F1F] font-bold text-sm uppercase tracking-wide transition-colors">
               Sobre nós
             </Link>
 
