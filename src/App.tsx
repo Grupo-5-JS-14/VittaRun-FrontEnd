@@ -17,7 +17,7 @@ function AppContent() {
 
   return (
     <>
-      {location.pathname !== "/" && <Navbar />}
+      {location.pathname !== "/login" && <Navbar />}
 
       <div className="min-h80hv">
         <Routes>
@@ -29,7 +29,7 @@ function AppContent() {
         </Routes>
       </div>
 
-      {location.pathname !== "/" && <Footer />}
+      {location.pathname !== "/login" && <Footer />}
 
     </>
   );
