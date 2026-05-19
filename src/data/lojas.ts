@@ -1,13 +1,14 @@
-import LivUp from "../assets/LivUp.png";
-import BgLivUp from "../assets/BgLivUp.jpg";
-
 export const bd_lojas = [
   {
     id: 1,
     nome: "Liv Up",
     descricao: "Marmitas • Hipertrofia • Proteína",
-    logo: LivUp,
-    bg: BgLivUp,
+    cnpj: "12.345.678/0001-10",
+    cep: "01310-100",
+    tag: "Mais pedido",
+    logo: "./assets/LivUp.png",
+    bg: "./assets/BgLivUp.jpg",
+    categoria: { id: 3 }, // Alta Proteína
   },
   {
     id: 2,
@@ -16,8 +17,8 @@ export const bd_lojas = [
     cnpj: "23.456.789/0001-21",
     cep: "04567-000",
     tag: "Novo",
-    logo: "./src/assets/Boali.png",
-    bg: "./src/assets/BgBoali.jpg",
+    logo: "./assets/Boali.png",
+    bg: "./assets/BgBoali.jpg",
     categoria: { id: 2 }, // Low Carb
   },
   {
@@ -27,8 +28,8 @@ export const bd_lojas = [
     cnpj: "34.567.890/0001-32",
     cep: "04089-001",
     tag: "Top Fitness",
-    logo: "./src/assets/Oakberry.png",
-    bg: "./src/assets/BgOakberry.png",
+    logo: "./assets/Oakberry.png",
+    bg: "./assets/BgOakberry.png",
     categoria: { id: 8 }, // Smoothies e Bebidas
   },
   {
@@ -38,8 +39,8 @@ export const bd_lojas = [
     cnpj: "45.678.901/0001-43",
     cep: "05010-020",
     tag: "Favorito",
-    logo: "./src/assets/Greenfood.png",
-    bg: "./src/assets/BgGreenfood.png",
+    logo: "./assets/Greenfood.png",
+    bg: "./assets/BgGreenfood.png",
     categoria: { id: 4 }, // Orgânicos
   },
   {
@@ -49,8 +50,8 @@ export const bd_lojas = [
     cnpj: "56.789.012/0001-54",
     cep: "02245-300",
     tag: "Promo Fit",
-    logo: "./src/assets/PizzaStudio.png",
-    bg: "./src/assets/BgPizzaStudio.jpg",
+    logo: "./assets/PizzaStudio.png",
+    bg: "./assets/BgPizzaStudio.jpg",
     categoria: { id: 7 }, // Pizzas Saudáveis
   },
   {
@@ -60,8 +61,8 @@ export const bd_lojas = [
     cnpj: "78.901.234/0001-76",
     cep: "06018-000",
     tag: "Queridinho",
-    logo: "./src/assets/Saladices.png",
-    bg: "./src/assets/BgSaladices.jpg",
+    logo: "./assets/Saladices.png",
+    bg: "./assets/BgSaladices.jpg",
     categoria: { id: 6 }, 
   },
   {
@@ -71,8 +72,8 @@ export const bd_lojas = [
     cnpj: "89.012.345/0001-87",
     cep: "01414-000",
     tag: "Foco no Ganhos",
-    logo: "./src/assets/MaisFit.png",
-    bg: "./src/assets/BgMaisFit.jpg",
+    logo: "./assets/MaisFit.png",
+    bg: "./assets/BgMaisFit.jpg",
     categoria: { id: 9 }, 
   },
   {
@@ -82,8 +83,8 @@ export const bd_lojas = [
     cnpj: "90.123.456/0001-98",
     cep: "04711-120",
     tag: "100% Orgânico",
-    logo: "./src/assets/Korin.png",
-    bg: "./src/assets/BgKorin.jpg",
+    logo: "./assets/Korin.png",
+    bg: "./assets/BgKorin.jpg",
     categoria: { id: 4 }, // Orgânicos
   },
   {
@@ -93,8 +94,8 @@ export const bd_lojas = [
     cnpj: "11.223.344/0001-55",
     cep: "03045-000",
     tag: "Sextou Fit",
-    logo: "./src/assets/BrotoFast.png",
-    bg: "./src/assets/BgBrotoFast.png",
+    logo: "./assets/BrotoFast.png",
+    bg: "./assets/BgBrotoFast.png",
     categoria: { id: 7 }, // Pizzas Saudáveis
   },
   {
@@ -104,8 +105,8 @@ export const bd_lojas = [
     cnpj: "22.334.455/0001-66",
     cep: "22020-001",
     tag: "Refrescante",
-    logo: "./src/assets/SmoothieWave.png",
-    bg: "./src/assets/BgSmoothieWave.jpg",
+    logo: "./assets/SmoothieWave.png",
+    bg: "./assets/BgSmoothieWave.jpg",
     categoria: { id: 8 }, // Smoothies e Bebidas
   },
   {
@@ -115,8 +116,8 @@ export const bd_lojas = [
     cnpj: "33.445.566/0001-77",
     cep: "01311-200",
     tag: "Monte o Seu",
-    logo: "./src/assets/SubwayFit.png",
-    bg: "./src/assets/BgSubwayFit.jpg",
+    logo: "./assets/SubwayFit.png",
+    bg: "./assets/BgSubwayFit.jpg",
     categoria: { id: 5 }, // Lanches Saudáveis
   },
   {
@@ -126,8 +127,8 @@ export const bd_lojas = [
     cnpj: "44.556.677/0001-88",
     cep: "20040-002",
     tag: "Essencial",
-    logo: "./src/assets/MundoVerde.png",
-    bg: "./src/assets/BgMundoVerde.jpg",
+    logo: "./assets/MundoVerde.png",
+    bg: "./assets/BgMundoVerde.jpg",
     categoria: { id: 4 }, // Orgânicos
   },
   {
@@ -137,8 +138,8 @@ export const bd_lojas = [
     cnpj: "55.667.788/0001-99",
     cep: "30140-010",
     tag: "Pós-Treino",
-    logo: "./src/assets/SantoShake.png",
-    bg: "./src/assets/BgSantoShake.jpg",
+    logo: "./assets/SantoShake.png",
+    bg: "./assets/BgSantoShake.jpg",
     categoria: { id: 8 }, // Smoothies e Bebidas
   },
   {
@@ -148,8 +149,8 @@ export const bd_lojas = [
     cnpj: "66.778.899/0001-11",
     cep: "80010-000",
     tag: "Cheat Meal Saudável",
-    logo: "./src/assets/BioZone.png",
-    bg: "./src/assets/BgBioZone.jpg",
+    logo: "./assets/BioZone.png",
+    bg: "./assets/BgBioZone.jpg",
     categoria: { id: 5 }, // Lanches Saudáveis
   },
   {
@@ -159,8 +160,8 @@ export const bd_lojas = [
     cnpj: "77.889.900/0001-22",
     cep: "90010-001",
     tag: "Sucesso",
-    logo: "./src/assets/ForneriaProteica.png",
-    bg: "./src/assets/BgForneria.jpg",
+    logo: "./assets/ForneriaProteica.png",
+    bg: "./assets/BgForneria.jpg",
     categoria: { id: 7 }, // Pizzas Saudáveis
   },
   {
@@ -170,8 +171,8 @@ export const bd_lojas = [
     cnpj: "88.990.011/0001-33",
     cep: "04533-010",
     tag: "Alta Tecnologia",
-    logo: "./src/assets/Praso.png",
-    bg: "./src/assets/BgPraso.jpg",
+    logo: "./assets/Praso.png",
+    bg: "./assets/BgPraso.jpg",
     categoria: { id: 1 }, // Marmitas Fitness
   },
   {
@@ -181,8 +182,8 @@ export const bd_lojas = [
     cnpj: "99.001.122/0001-44",
     cep: "40015-000",
     tag: "Energia Pura",
-    logo: "./src/assets/AcaiConcept.png",
-    bg: "./src/assets/BgAcaiConcept.jpg",
+    logo: "./assets/AcaiConcept.png",
+    bg: "./assets/BgAcaiConcept.jpg",
     categoria: { id: 8 }, // Smoothies e Bebidas
   },
   {
@@ -192,8 +193,8 @@ export const bd_lojas = [
     cnpj: "12.398.745/0001-99",
     cep: "21030-000",
     tag: "Monstro Fit",
-    logo: "./src/assets/MuscleFood.png",
-    bg: "./src/assets/BgMuscleFood.jpg",
+    logo: "./assets/MuscleFood.png",
+    bg: "./assets/BgMuscleFood.jpg",
     categoria: { id: 3 }, // Alta Proteína
   },
   {
@@ -203,8 +204,8 @@ export const bd_lojas = [
     cnpj: "23.412.987/0001-88",
     cep: "70040-020",
     tag: "100% Plant Based",
-    logo: "./src/assets/Veggacy.png",
-    bg: "./src/assets/BgVeggacy.jpg",
+    logo: "./assets/Veggacy.png",
+    bg: "./assets/BgVeggacy.jpg",
     categoria: { id: 4 }, // Orgânicos
   },
   {
@@ -214,8 +215,8 @@ export const bd_lojas = [
     cnpj: "34.523.012/0001-77",
     cep: "60010-000",
     tag: "Zero Culpa",
-    logo: "./src/assets/SlimSlice.png",
-    bg: "./src/assets/BgSlimSlice.jpg",
+    logo: "./assets/SlimSlice.png",
+    bg: "./assets/BgSlimSlice.jpg",
     categoria: { id: 7 }, // Pizzas Saudáveis
   },
   {
@@ -225,8 +226,8 @@ export const bd_lojas = [
     cnpj: "45.634.123/0001-66",
     cep: "01423-000",
     tag: "Premium",
-    logo: "./src/assets/Puravida.png",
-    bg: "./src/assets/BgPuravida.jpg",
+    logo: "./assets/Puravida.png",
+    bg: "./assets/BgPuravida.jpg",
     categoria: { id: 4 }, // Orgânicos
   },
   {
@@ -236,8 +237,8 @@ export const bd_lojas = [
     cnpj: "56.745.234/0001-55",
     cep: "50010-000",
     tag: "Refresque Seu Dia",
-    logo: "./src/assets/SuperShakes.png",
-    bg: "./src/assets/BgSuperShakes.jpg",
+    logo: "./assets/SuperShakes.png",
+    bg: "./assets/BgSuperShakes.jpg",
     categoria: { id: 8 }, // Smoothies e Bebidas
   },
   {
@@ -247,8 +248,8 @@ export const bd_lojas = [
     cnpj: "67.856.345/0001-44",
     cep: "22410-003",
     tag: "Praticidade Urbana",
-    logo: "./src/assets/UrbanBowl.png",
-    bg: "./src/assets/BgUrbanBowl.jpg",
+    logo: "./assets/UrbanBowl.png",
+    bg: "./assets/BgUrbanBowl.jpg",
     categoria: { id: 6 }, // Bowls Fitness
   },
   {
@@ -258,8 +259,8 @@ export const bd_lojas = [
     cnpj: "78.967.456/0001-33",
     cep: "31110-000",
     tag: "Foco na Dieta",
-    logo: "./src/assets/BoxSaudavel.png",
-    bg: "./src/assets/BgBoxSaudavel.jpg",
+    logo: "./assets/BoxSaudavel.png",
+    bg: "./assets/BgBoxSaudavel.jpg",
     categoria: { id: 1 }, // Marmitas Fitness
   }
 ];
