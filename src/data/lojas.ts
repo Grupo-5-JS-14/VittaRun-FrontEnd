@@ -1,14 +1,13 @@
+import LivUp from "../assets/LivUp.png";
+import BgLivUp from "../assets/BgLivUp.jpg";
+
 export const bd_lojas = [
   {
     id: 1,
     nome: "Liv Up",
     descricao: "Marmitas • Hipertrofia • Proteína",
-    cnpj: "12.345.678/0001-10",
-    cep: "01310-100",
-    tag: "Mais pedido",
-    logo: "./src/assets/LivUp.png",
-    bg: "./src/assets/BgLivUp.jpg",
-    categoria: { id: 3 }, // Alta Proteína
+    logo: LivUp,
+    bg: BgLivUp,
   },
   {
     id: 2,
