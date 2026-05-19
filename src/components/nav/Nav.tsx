@@ -67,11 +67,10 @@ function Navbar() {
         
         <Link to="/home" className="flex items-center gap-2 shrink-0 group">
           <div className="bg-[#006644] p-1.5 rounded-xl border-2 border-black shadow-[2px_2px_0px_rgba(0,0,0,1)] group-hover:rotate-6 transition-transform">
-            <Salad className="text-[#FFFDF9]" size={26} />
+            <h1 className="text-2xl font-black italic tracking-tighter leading-none text-white uppercase">
+              Vitta<span className="text-[#FF5F1F]">Run</span>
+            </h1>
           </div>
-          <h1 className="text-2xl font-black tracking-tighter leading-none text-black uppercase">
-            Vitta<span className="text-[#FF5F1F]">Run</span>
-          </h1>
         </Link>
 
         <ul className="hidden lg:flex items-center gap-2">

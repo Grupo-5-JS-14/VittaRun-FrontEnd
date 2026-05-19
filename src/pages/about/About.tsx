@@ -76,19 +76,16 @@ function About() {
           </p>
         </div>
 
-        {/* VITRINE VISUAL (IMAGEM ESTILO POSTER) */}
         <div className="w-full max-w-5xl rounded-3xl overflow-hidden h-64 md:h-96 border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] mb-20">
           <img
-            src="./assets/BgVittaRun.png"
+            src="./assets/BgAbout.png"
             alt="Mesa cheia de pratos saudáveis, saladas e bowls coloridos vistos de cima"
             className="w-full h-full object-cover"
           />
         </div>
 
-        {/* LINHA SEPARADORA */}
         <hr className="w-full max-w-5xl border-2 border-dashed border-black mb-16" />
 
-        {/* SEÇÃO DA EQUIPE REVELADA */}
         <div className="w-full flex flex-col items-center gap-6 mb-8">
           <span className="inline-block bg-[#FFC700] text-black border-2 border-black px-4 py-1.5 rounded-xl font-black uppercase text-xs tracking-wider shadow-[3px_3px_0px_rgba(0,0,0,1)] rotate-1">
             💻 O Time por trás do Código

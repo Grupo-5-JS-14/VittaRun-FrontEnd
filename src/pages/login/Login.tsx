@@ -12,10 +12,10 @@ function Login() {
   };
 
   return (
-    <section className="min-h-screen bg-[#FFFDF9] flex border-b-4 border-black">
+    <section className="min-h-screen bg-[#006644] flex border-b-4 border-black">
       <div className="hidden lg:flex w-1/2 h-screen overflow-hidden border-r-4 border-black">
         <img
-          src="./assets/BgVittaRun.png"
+          src="./assets/BgLogin.png"
           alt="Vitta Run"
           className="w-full h-full object-cover object-left"
         />
