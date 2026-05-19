@@ -23,7 +23,7 @@ function Footer() {
               Sobre nós
             </Link>
 
-            <a href="#" className="hover:text-[#FF5F1F] font-bold text-sm uppercase tracking-wide transition-colors">
+            <a href="" className="hover:text-[#FF5F1F] font-bold text-sm uppercase tracking-wide transition-colors">
               Carreiras
             </a>
           </div>

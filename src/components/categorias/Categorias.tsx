@@ -1,5 +1,4 @@
 import { Grid2x2, Salad, Soup, Dumbbell, Leaf, Wheat, CupSoda, Hamburger, CakeSlice,} from "lucide-react";
-import { Link } from "react-router-dom";
 
 const categorias = [
   { nome: "Todas", icon: Grid2x2, hoverBg: "group-hover:bg-[#FF5F1F]" },
@@ -29,12 +28,12 @@ function Categorias() {
           </p>
         </div>
 
-        <Link
-          to="/categorias"
+        <a 
+          href=""
           className="bg-black text-[#FFFDF9] font-black uppercase text-xs md:text-sm tracking-wider px-4 py-2.5 rounded-xl border-2 border-black shadow-[3px_3px_0px_#FF5F1F] hover:translate-x-px hover:translate-y-px hover:shadow-[2px_2px_0px_#FF5F1F] transition-all self-start sm:self-auto"
         >
           Ver todas →
-        </Link>
+        </a>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 pb-4 pt-2">
