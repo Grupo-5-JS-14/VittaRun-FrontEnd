@@ -21,7 +21,7 @@ function AppContent() {
 
       <div className="min-h80hv">
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/lojas" element={<Lojas />} />
