@@ -79,7 +79,7 @@ function About() {
         {/* VITRINE VISUAL (IMAGEM ESTILO POSTER) */}
         <div className="w-full max-w-5xl rounded-3xl overflow-hidden h-64 md:h-96 border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)] mb-20">
           <img
-            src="src/assets/BgVittaRun.png"
+            src="./assets/BgVittaRun.png"
             alt="Mesa cheia de pratos saudáveis, saladas e bowls coloridos vistos de cima"
             className="w-full h-full object-cover"
           />

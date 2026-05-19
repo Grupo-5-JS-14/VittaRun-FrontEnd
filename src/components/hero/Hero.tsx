@@ -10,7 +10,7 @@ function Hero() {
       bgColor: "bg-[#FF5F1F]", 
       textColor: "text-[#FFFDF9]", 
       titleColor: "text-[#006644]", 
-      img: "/src/assets/lanche-top.png", 
+      img: "./assets/lanche-top.png", 
     },
     {
       title: "ALIMENTE SEU CORPO, NÃO SUA PREGUIÇA!",
@@ -19,7 +19,7 @@ function Hero() {
       bgColor: "bg-[#006644]", 
       textColor: "text-[#FFFDF9]",
       titleColor: "text-[#FF8A00]", 
-      img: "/src/assets/salada-recortada.png",
+      img: "./assets/salada-recortada.png",
     },
     {
       title: "SUA ROTINA MAIS LEVE COMEÇA AQUI",
@@ -28,7 +28,7 @@ function Hero() {
       bgColor: "bg-[#FFC700]", 
       textColor: "text-black",
       titleColor: "text-[#006644]",
-      img: "/src/assets/cafe-manha.png",
+      img: "./assets/cafe-manha.png",
     },
   ];
 

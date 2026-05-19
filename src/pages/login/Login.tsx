@@ -15,7 +15,7 @@ function Login() {
     <section className="min-h-screen bg-[#FFFDF9] flex border-b-4 border-black">
       <div className="hidden lg:flex w-1/2 h-screen overflow-hidden border-r-4 border-black">
         <img
-          src="src/assets/BgVittaRun.png"
+          src="./assets/BgVittaRun.png"
           alt="Vitta Run"
           className="w-full h-full object-cover object-left"
         />
