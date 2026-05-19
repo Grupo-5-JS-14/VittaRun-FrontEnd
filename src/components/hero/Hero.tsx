@@ -5,12 +5,12 @@ function Hero() {
   const banners = [
     {
       title: "QUEM DISSE QUE COMIDA SAUDÁVEL TEM QUE SER SEM GRAÇA?",
-      subtitle: "Assa o teu pão de queijo no café da manhã com a Vitta Run. 🧡",
+      subtitle: "Assa o teu pão de queijo no café da manhã com a Vitta Run.",
       cta: "VER CARDÁPIO",
       bgColor: "bg-[#FF5F1F]", 
       textColor: "text-[#FFFDF9]", 
       titleColor: "text-[#006644]", 
-      img: "/marmita-laranja.png", 
+      img: "/src/assets/lanche-top.png", 
     },
     {
       title: "ALIMENTE SEU CORPO, NÃO SUA PREGUIÇA!",
@@ -28,7 +28,7 @@ function Hero() {
       bgColor: "bg-[#FFC700]", 
       textColor: "text-black",
       titleColor: "text-[#006644]",
-      img: "/suco-fresco.png",
+      img: "/src/assets/cafe-manha.png",
     },
   ];
 
@@ -77,28 +77,21 @@ function Hero() {
                   </button>
                 </div>
 
-                {/* CONTAINER DA IMAGEM */}
 <div className="relative w-full md:w-1/2 h-48 md:h-full flex items-end justify-center">
-  {/* Círculo de fundo reposicionado para a base */}
   <div className="absolute w-56 h-56 md:w-96 md:h-96 bg-[#FFFDF9]/20 rounded-full blur-sm pointer-events-none bottom-[-10%] left-1/2 -translate-x-1/2" />
   
   <img
     src={banner.img}
     alt={`produto-${index}`}
     className="
-      /* Força o alinhamento absoluto grudado no chão do banner */
       absolute bottom-[-15%] md:bottom-[-20%] left-1/2 -translate-x-1/2
       
-      /* Escala agressiva para o prato ficar gigante */
       h-[110%] md:h-[140%] w-auto
       
-      /* Impede o navegador de limitar o tamanho horizontal da imagem */
       max-w-none 
       
-      /* Encaixe focado na base */
       object-cover object-bottom
       
-      /* Efeitos originais mantidos */
       drop-shadow-[10px_10px_0px_rgba(0,0,0,0.25)] 
       animate-bounce-slow
     "
