@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
+import Lojas from "./pages/lojas/Lojas";
 
 function AppContent() {
   const location = useLocation();
@@ -22,8 +23,9 @@ function AppContent() {
       <div className="min-h80hv">
         <Routes>
           <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/lojas" element={<ListaLoja />} />
+          <Route path="/lojas" element={<Lojas />} />
           <Route path="/sobre" element={<About/>}/>
         </Routes>
       </div>

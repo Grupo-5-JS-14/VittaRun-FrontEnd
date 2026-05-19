@@ -1,80 +1,82 @@
-
-
 type CardLojaProps = {
   imagem: string;
   nome: string;
-  categorias: string;
+  categorias: string; 
+  categoria: string;  
   logo?: string;
-  novo?: boolean;
+  tag?: string;
 };
 
 function CardLoja({
   imagem,
   nome,
   categorias,
+  categoria,
   logo,
-  novo,
+  tag,
 }: CardLojaProps) {
   return (
-    <div className="w-80 bg-white rounded-2xl shadow-md overflow-hidden hover:scale-105 transition duration-300">
+    <div className="group w-[320px] h-95 flex flex-col bg-white rounded-[28px] border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
       
-      {/* Imagem */}
-      <div className="relative">
+      <div className="relative overflow-hidden h-44 shrink-0">
         <img
           src={imagem}
           alt={nome}
-          className="w-full h-40 object-cover"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
 
-        {/* Badge Novo */}
-        {novo && (
-          <span className="absolute top-3 left-3 bg-[#FF8A00] text-white text-sm font-semibold px-3 py-1 rounded-full">
-            Novo
+        {tag && (
+          <span className="absolute top-4 left-4 bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-2xl shadow-sm">
+            {tag}
           </span>
         )}
       </div>
 
-      {/* Conteúdo */}
-      <div className="p-4">
-
-        {/* Logo + Nome */}
-        <div className="flex items-center gap-3">
-          
-          <div className="w-14 h-14 rounded-full bg-gray-100 overflow-hidden shadow flex items-center justify-center">
-            {logo ? (
-              <img
-                src={logo}
-                alt={nome}
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <span className="text-orange-500 font-bold text-xl">
-                fit
-              </span>
-            )}
-          </div>
-
-          <div>
-            <h2 className="text-lg font-bold text-gray-800">
-              {nome}
-            </h2>
-
-            <p className="text-sm text-gray-500">
-              {categorias}
-            </p>
-          </div>
+      <div className="relative px-5 pt-6 pb-5 flex flex-col flex-1 justify-between">
+        
+        <div className="absolute -top-10 left-5 w-20 h-20 rounded-full bg-white overflow-hidden border border-gray-100 flex items-center justify-center shadow-sm z-10">
+          {logo ? (
+            <img
+              src={logo}
+              alt={nome}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <span className="text-green-700 font-bold text-xl">
+              fit
+            </span>
+          )}
         </div>
 
-        {/* Informações */}
-        <div className="flex items-center gap-4 mt-4 text-sm text-gray-600">
-          <span className="text-orange-500 font-semibold">
+        <div className="ml-24 h-20 flex flex-col justify-center">
+          <h2 className="text-lg font-bold text-gray-900 leading-tight line-clamp-2 tracking-tight">
+            {nome}
+          </h2>
+
+          <p className="mt-0.5 text-gray-500 text-xs line-clamp-1">
+            {categorias}
+          </p>
+        </div>
+
+        <div className="flex items-center gap-2.5 mt-auto text-xs text-gray-500 border-t border-gray-50 pt-3">
+          <span className="text-orange-500 text-sm">
+            ★
+          </span>
+
+          <span className="font-semibold text-gray-800">
+            4,8
+          </span>
+
+          <span>•</span>
+
+          <span>20–35 min</span>
+
+          <span>•</span>
+
+          <span className="text-green-700 font-medium truncate max-w-30" title={categoria}>
+            {categoria}
           </span>
         </div>
-
-        {/* Frete grátis */}
-        <p className="mt-4 text-[#2E9E45] font-semibold text-sm">
-          Frete grátis acima de R$ 50
-        </p>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GithubLogoIcon, InstagramLogoIcon, LinkedinLogoIcon} from "@phosphor-icons/react";
+import { GithubLogoIcon, InstagramLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type Grupo05Props = {
@@ -10,7 +10,7 @@ function Grupo05({ variante = "grande" }: Grupo05Props) {
   const integrantes = [
     {
       nome: "Lohanna Benjamim",
-      cargo: "Login, Cadastro e Responsividade",
+      cargo: "UX/UI, Login, Cadastro e Responsividade",
       foto: "https://avatars.githubusercontent.com/u/188930169?v=4",
       github: "https://github.com/lohannab",
       linkedin: "https://www.linkedin.com/in/lohannab/",
@@ -83,59 +83,45 @@ function Grupo05({ variante = "grande" }: Grupo05Props) {
   const pessoa = integrantes[index];
   const compacto = variante === "compacto";
 
+
   if (compacto) {
     return (
-      <div className="flex flex-col items-center gap-3">
-        <div className="flex items-center gap-2">
+      <div className="flex flex-col items-center gap-4 w-full">
+        <div className="flex items-center gap-2.5 w-full justify-center">
+          
           <button
             onClick={voltar}
-            className="w-7 h-7 rounded-full bg-white shadow-sm border border-gray-200 flex items-center justify-center hover:bg-green-50 transition cursor-pointer"
+            type="button"
+            className="w-8 h-8 rounded-full bg-[#FFFDF9] text-black border-2 border-black flex items-center justify-center hover:bg-[#FFC700] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:translate-x-[0.5px] hover:translate-y-[0.5px] hover:shadow-[1px_1px_0px_rgba(0,0,0,1)] transition-all cursor-pointer select-none"
           >
-            <ChevronLeft className="text-green-700" size={18} />
+            <ChevronLeft size={16} className="stroke-[3px]" />
           </button>
 
-          <div className="w-56 bg-white rounded-2xl shadow-sm border border-gray-200 p-3 flex items-center gap-3">
+          <div className="w-full max-w-60 bg-[#FFFDF9] rounded-2xl border-2 border-black p-3 flex items-center gap-3 shadow-[4px_4px_0px_rgba(0,0,0,1)]">
             <img
               src={pessoa.foto}
               alt={pessoa.nome}
-              className="w-16 h-16 rounded-full object-cover border-2 border-green-700"
+              className="w-12 h-12 rounded-xl object-cover border-2 border-black shadow-[1.5px_1.5px_0px_rgba(0,0,0,1)]"
             />
 
-            <div className="flex flex-col text-left min-w-0">
-              <h3 className="text-sm font-bold text-gray-900 truncate">
+            <div className="flex flex-col text-left min-w-0 flex-1">
+              <h3 className="text-xs font-black text-black uppercase tracking-tight truncate">
                 {pessoa.nome}
               </h3>
 
-              <p className="text-[11px] text-green-700 font-semibold leading-tight mt-1">
+              <p className="text-[10px] text-[#006644] font-bold uppercase tracking-wide mt-0.5 truncate">
                 {pessoa.cargo}
               </p>
 
-              <div className="flex gap-3 mt-2 text-gray-500">
-                <a
-                  href={pessoa.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-green-700 transition"
-                >
-                  <GithubLogoIcon size={18} weight="fill" />
+              <div className="flex gap-2.5 mt-1.5 text-black">
+                <a href={pessoa.github} target="_blank" rel="noopener noreferrer" className="hover:text-[#FF5F1F] transition-colors">
+                  <GithubLogoIcon size={16} weight="fill" />
                 </a>
-
-                <a
-                  href={pessoa.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-green-700 transition"
-                >
-                  <LinkedinLogoIcon size={18} weight="fill" />
+                <a href={pessoa.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-[#FF5F1F] transition-colors">
+                  <LinkedinLogoIcon size={16} weight="fill" />
                 </a>
-
-                <a
-                  href={pessoa.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-orange-500 transition"
-                >
-                  <InstagramLogoIcon size={18} weight="bold" />
+                <a href={pessoa.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-[#FF5F1F] transition-colors">
+                  <InstagramLogoIcon size={16} weight="bold" />
                 </a>
               </div>
             </div>
@@ -143,19 +129,21 @@ function Grupo05({ variante = "grande" }: Grupo05Props) {
 
           <button
             onClick={avancar}
-            className="w-7 h-7 rounded-full bg-white shadow-sm border border-gray-200 flex items-center justify-center hover:bg-green-50 transition cursor-pointer"
+            type="button"
+            className="w-8 h-8 rounded-full bg-[#FFFDF9] text-black border-2 border-black flex items-center justify-center hover:bg-[#FFC700] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:translate-x-[0.5px] hover:translate-y-[0.5px] hover:shadow-[1px_1px_0px_rgba(0,0,0,1)] transition-all cursor-pointer select-none"
           >
-            <ChevronRight className="text-green-700" size={18} />
+            <ChevronRight size={16} className="stroke-[3px]" />
           </button>
         </div>
 
-        <div className="flex gap-1.5">
+        <div className="flex gap-1.5 justify-center">
           {integrantes.map((_, posicao) => (
             <button
               key={posicao}
+              type="button"
               onClick={() => setIndex(posicao)}
-              className={`w-2 h-2 rounded-full transition cursor-pointer ${
-                posicao === index ? "bg-green-700" : "bg-gray-300"
+              className={`w-2 h-2 rounded-full border border-black transition-all cursor-pointer ${
+                posicao === index ? "bg-[#FF5F1F] w-4" : "bg-white"
               }`}
             />
           ))}
@@ -164,58 +152,44 @@ function Grupo05({ variante = "grande" }: Grupo05Props) {
     );
   }
 
+
   return (
-    <div className="flex flex-col items-center gap-5">
-      <div className="flex items-center gap-5">
+    <div className="flex flex-col items-center gap-6">
+      <div className="flex items-center gap-6">
+        
         <button
           onClick={voltar}
-          className="w-12 h-12 rounded-full bg-white shadow-md border border-gray-200 flex items-center justify-center hover:bg-green-50 transition cursor-pointer"
+          type="button"
+          className="w-12 h-12 rounded-full bg-[#FFFDF9] text-black border-3 border-black flex items-center justify-center hover:bg-[#FFC700] shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:translate-x-px hover:translate-y-px hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] transition-all cursor-pointer active:scale-95 select-none"
         >
-          <ChevronLeft className="text-green-700" size={28} />
+          <ChevronLeft size={24} className="stroke-[3px]" />
         </button>
 
-        <div className="w-72 bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100">
+        <div className="w-72 bg-[#FFFDF9] rounded-3xl overflow-hidden border-4 border-black shadow-[6px_6px_0px_rgba(0,0,0,1)]">
           <img
             src={pessoa.foto}
             alt={pessoa.nome}
-            className="w-full h-72 object-cover"
+            className="w-full h-64 object-cover border-b-4 border-black"
           />
 
-          <div className="p-6 flex flex-col items-center text-center">
-            <h3 className="text-2xl font-bold text-gray-900">
+          <div className="p-5 flex flex-col items-center text-center bg-white">
+            <h3 className="text-xl font-black text-black uppercase tracking-tight">
               {pessoa.nome}
             </h3>
 
-            <p className="text-green-700 font-semibold mt-2 min-h-10 flex items-center justify-center leading-tight">
+            <p className="text-[#006644] bg-green-50 border-2 border-black px-3 py-1 rounded-lg text-xs font-black uppercase tracking-wider mt-3 min-h-10 flex items-center justify-center leading-tight shadow-[2px_2px_0px_rgba(0,0,0,1)]">
               {pessoa.cargo}
             </p>
 
-            <div className="flex gap-5 mt-5 text-gray-500">
-              <a
-                href={pessoa.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-green-700 transition"
-              >
-                <GithubLogoIcon size={32} weight="fill" />
+            <div className="flex gap-4 mt-5 text-black">
+              <a href={pessoa.github} target="_blank" rel="noopener noreferrer" className="hover:text-[#FF5F1F] transition-transform hover:scale-110">
+                <GithubLogoIcon size={26} weight="fill" />
               </a>
-
-              <a
-                href={pessoa.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-green-700 transition"
-              >
-                <LinkedinLogoIcon size={32} weight="fill" />
+              <a href={pessoa.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-[#FF5F1F] transition-transform hover:scale-110">
+                <LinkedinLogoIcon size={26} weight="fill" />
               </a>
-
-              <a
-                href={pessoa.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-orange-500 transition"
-              >
-                <InstagramLogoIcon size={32} weight="bold" />
+              <a href={pessoa.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-[#FF5F1F] transition-transform hover:scale-110">
+                <InstagramLogoIcon size={26} weight="bold" />
               </a>
             </div>
           </div>
@@ -223,9 +197,10 @@ function Grupo05({ variante = "grande" }: Grupo05Props) {
 
         <button
           onClick={avancar}
-          className="w-12 h-12 rounded-full bg-white shadow-md border border-gray-200 flex items-center justify-center hover:bg-green-50 transition cursor-pointer"
+          type="button"
+          className="w-12 h-12 rounded-full bg-[#FFFDF9] text-black border-3 border-black flex items-center justify-center hover:bg-[#FFC700] shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:translate-x-px hover:translate-y-px hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] transition-all cursor-pointer active:scale-95 select-none"
         >
-          <ChevronRight className="text-green-700" size={28} />
+          <ChevronRight size={24} className="stroke-[3px]" />
         </button>
       </div>
 
@@ -233,9 +208,10 @@ function Grupo05({ variante = "grande" }: Grupo05Props) {
         {integrantes.map((_, posicao) => (
           <button
             key={posicao}
+            type="button"
             onClick={() => setIndex(posicao)}
-            className={`w-3 h-3 rounded-full transition cursor-pointer ${
-              posicao === index ? "bg-green-700" : "bg-gray-300"
+            className={`h-3 rounded-full border-2 border-black transition-all cursor-pointer ${
+              posicao === index ? "bg-[#FF5F1F] w-6" : "bg-white w-3"
             }`}
           />
         ))}

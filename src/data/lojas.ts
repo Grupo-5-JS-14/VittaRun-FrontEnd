@@ -1,80 +1,266 @@
 export const bd_lojas = [
   {
     id: 1,
-    nome: "Fit Power Meals",
-    descricao: "Refeições fitness balanceadas com foco em ganho de massa muscular.",
+    nome: "Liv Up",
+    descricao: "Marmitas • Hipertrofia • Proteína",
     cnpj: "12.345.678/0001-10",
     cep: "01310-100",
-    aberto: true,
-    logo: "src/assets/FitPower.png",
-    bg: "src/assets/BgPower.jpg",
-    categoria: {
-      id: 1
-    }
+    tag: "Mais pedido",
+    logo: "src/assets/LivUp.png",
+    bg: "src/assets/BgLivUp.jpg",
+    categoria: { id: 3 }, // Alta Proteína
   },
   {
     id: 2,
-    nome: "Green Life Food",
-    descricao: "Comidas saudáveis, naturais e low carb para o dia a dia.",
+    nome: "Boali",
+    descricao: "Low Carb • Natural • Saudável",
     cnpj: "23.456.789/0001-21",
     cep: "04567-000",
-    aberto: true,
-    logo: "src/assets/Green .png",
-    bg: "",
-    categoria: {
-      id: 2
-    }
+    tag: "Novo",
+    logo: "src/assets/Boali.png",
+    bg: "src/assets/BgBoali.jpg",
+    categoria: { id: 2 }, // Low Carb
   },
   {
     id: 3,
-    nome: "Protein House",
-    descricao: "Pratos ricos em proteína e opções para atletas.",
+    nome: "Oakberry",
+    descricao: "Proteínas • Atletas • Performance",
     cnpj: "34.567.890/0001-32",
     cep: "04089-001",
-    aberto: false,
-    logo: "src/assets/Protein.png",
-    bg: "src/assets/BgProtein.png",
-    categoria: {
-      id: 3
-    }
+    tag: "Top Fitness",
+    logo: "src/assets/Oakberry.png",
+    bg: "src/assets/BgOakberry.png",
+    categoria: { id: 8 }, // Smoothies e Bebidas
   },
   {
     id: 4,
-    nome: "Natural Fit Kitchen",
-    descricao: "Culinária saudável com ingredientes frescos e orgânicos.",
+    nome: "Greenfood Smart Food",
+    descricao: "Orgânicos • Fresh • Equilibrado",
     cnpj: "45.678.901/0001-43",
     cep: "05010-020",
-    aberto: true,
-    logo: "src/assets/natural.png",
-    bg: "src/assets/BgNatural.png",
-    categoria: {
-      id: 4
-    }
+    tag: "Favorito",
+    logo: "src/assets/Greenfood.png",
+    bg: "src/assets/BgGreenfood.png",
+    categoria: { id: 4 }, // Orgânicos
   },
   {
     id: 5,
-    nome: "Shape Foods",
-    descricao: "Delivery de refeições fitness para emagrecimento e definição.",
+    nome: "Pizza Studio Fit",
+    descricao: "Pizzas Funcionais • Sem Glúten • Leve",
     cnpj: "56.789.012/0001-54",
     cep: "02245-300",
-    aberto: true,
-    logo: "src/assets/Shape.png",
-    bg: "src/assets/BgShape.jpg",
-    categoria: {
-      id: 5
-    }
+    tag: "Promo Fit",
+    logo: "src/assets/PizzaStudio.png",
+    bg: "src/assets/BgPizzaStudio.jpg",
+    categoria: { id: 7 }, // Pizzas Saudáveis
   },
   {
     id: 6,
-    nome: "Healthy Bowl",
-    descricao: "Bowls nutritivos com proteínas, legumes e grãos integrais.",
+    nome: "Saladices",
+    descricao: "Bowls • Nutritivo • Energia",
     cnpj: "78.901.234/0001-76",
     cep: "06018-000",
-    aberto: true,
-    logo: "src/assets/Bowl.png",
-    bg: "src/assets/BgBowl.jpg",
-    categoria: {
-      id: 6
-    }
+    tag: "Queridinho",
+    logo: "src/assets/Saladices.png",
+    bg: "src/assets/BgSaladices.jpg",
+    categoria: { id: 6 }, 
+  },
+  {
+    id: 7,
+    nome: "Mais Fit",
+    descricao: "Doces • Praticidade • Dieta",
+    cnpj: "89.012.345/0001-87",
+    cep: "01414-000",
+    tag: "Foco no Ganhos",
+    logo: "src/assets/MaisFit.png",
+    bg: "src/assets/BgMaisFit.jpg",
+    categoria: { id: 9 }, 
+  },
+  {
+    id: 8,
+    nome: "Korin Orgânicos",
+    descricao: "Frango Orgânico • Alimentos Limpos",
+    cnpj: "90.123.456/0001-98",
+    cep: "04711-120",
+    tag: "100% Orgânico",
+    logo: "src/assets/Korin.png",
+    bg: "src/assets/BgKorin.jpg",
+    categoria: { id: 4 }, // Orgânicos
+  },
+  {
+    id: 9,
+    nome: "Broto Fast Pizza",
+    descricao: "Massa de Aveia • Whey Isolate • Low Carb",
+    cnpj: "11.223.344/0001-55",
+    cep: "03045-000",
+    tag: "Sextou Fit",
+    logo: "src/assets/BrotoFast.png",
+    bg: "src/assets/BgBrotoFast.png",
+    categoria: { id: 7 }, // Pizzas Saudáveis
+  },
+  {
+    id: 10,
+    nome: "Smoothie Wave",
+    descricao: "Smoothies Proteicos • Cremosos • Zero Açúcar",
+    cnpj: "22.334.455/0001-66",
+    cep: "22020-001",
+    tag: "Refrescante",
+    logo: "src/assets/SmoothieWave.png",
+    bg: "src/assets/BgSmoothieWave.jpg",
+    categoria: { id: 8 }, // Smoothies e Bebidas
+  },
+  {
+    id: 11,
+    nome: "Subway Fit Concept",
+    descricao: "Sanduíches Integrais • Saladas Customizadas",
+    cnpj: "33.445.566/0001-77",
+    cep: "01311-200",
+    tag: "Monte o Seu",
+    logo: "src/assets/SubwayFit.png",
+    bg: "src/assets/BgSubwayFit.jpg",
+    categoria: { id: 5 }, // Lanches Saudáveis
+  },
+  {
+    id: 12,
+    nome: "Mundo Verde Selection",
+    descricao: "Snacks Saudáveis • Suplementos • Grãos",
+    cnpj: "44.556.677/0001-88",
+    cep: "20040-002",
+    tag: "Essencial",
+    logo: "src/assets/MundoVerde.png",
+    bg: "src/assets/BgMundoVerde.jpg",
+    categoria: { id: 4 }, // Orgânicos
+  },
+  {
+    id: 13,
+    nome: "Santo Shake",
+    descricao: "Shakes Funcionais • Colágeno • Termogênico",
+    cnpj: "55.667.788/0001-99",
+    cep: "30140-010",
+    tag: "Pós-Treino",
+    logo: "src/assets/SantoShake.png",
+    bg: "src/assets/BgSantoShake.jpg",
+    categoria: { id: 8 }, // Smoothies e Bebidas
+  },
+  {
+    id: 14,
+    nome: "Bio Zone Burger",
+    descricao: "Hambúrguer de Plantas • Pão Integral • Ketchup Zero",
+    cnpj: "66.778.899/0001-11",
+    cep: "80010-000",
+    tag: "Cheat Meal Saudável",
+    logo: "src/assets/BioZone.png",
+    bg: "src/assets/BgBioZone.jpg",
+    categoria: { id: 5 }, // Lanches Saudáveis
+  },
+  {
+    id: 15,
+    nome: "Forneria Proteica",
+    descricao: "Pizzas de Massa Integral • Queijo Light • Veggies",
+    cnpj: "77.889.900/0001-22",
+    cep: "90010-001",
+    tag: "Sucesso",
+    logo: "src/assets/ForneriaProteica.png",
+    bg: "src/assets/BgForneria.jpg",
+    categoria: { id: 7 }, // Pizzas Saudáveis
+  },
+  {
+    id: 16,
+    nome: "Praso Cozinha",
+    descricao: "Refeições Ultracongeladas • Nutrição Baseada em Ciência",
+    cnpj: "88.990.011/0001-33",
+    cep: "04533-010",
+    tag: "Alta Tecnologia",
+    logo: "src/assets/Praso.png",
+    bg: "src/assets/BgPraso.jpg",
+    categoria: { id: 1 }, // Marmitas Fitness
+  },
+  {
+    id: 17,
+    nome: "Açaí Concept Fit",
+    descricao: "Açaí Puro • Sem Xarope • Whey Protein",
+    cnpj: "99.001.122/0001-44",
+    cep: "40015-000",
+    tag: "Energia Pura",
+    logo: "src/assets/AcaiConcept.png",
+    bg: "src/assets/BgAcaiConcept.jpg",
+    categoria: { id: 8 }, // Smoothies e Bebidas
+  },
+  {
+    id: 18,
+    nome: "Muscle Food",
+    descricao: "Batata Doce e Frango • Dieta Rigorosa • Atletas",
+    cnpj: "12.398.745/0001-99",
+    cep: "21030-000",
+    tag: "Monstro Fit",
+    logo: "src/assets/MuscleFood.png",
+    bg: "src/assets/BgMuscleFood.jpg",
+    categoria: { id: 3 }, // Alta Proteína
+  },
+  {
+    id: 19,
+    nome: "Veggacy Express",
+    descricao: "Fast-Food Vegano • Rápido • Nutritivo e Leve",
+    cnpj: "23.412.987/0001-88",
+    cep: "70040-020",
+    tag: "100% Plant Based",
+    logo: "src/assets/Veggacy.png",
+    bg: "src/assets/BgVeggacy.jpg",
+    categoria: { id: 4 }, // Orgânicos
+  },
+  {
+    id: 20,
+    nome: "Slim Slice",
+    descricao: "Pizzas de Frigideira • Massa de Linhaça • Baixa Caloria",
+    cnpj: "34.523.012/0001-77",
+    cep: "60010-000",
+    tag: "Zero Culpa",
+    logo: "src/assets/SlimSlice.png",
+    bg: "src/assets/BgSlimSlice.jpg",
+    categoria: { id: 7 }, // Pizzas Saudáveis
+  },
+  {
+    id: 21,
+    nome: "PuraVida Kitchen",
+    descricao: "Ingredientes Premium • Suplementação Alimentar • Saúde",
+    cnpj: "45.634.123/0001-66",
+    cep: "01423-000",
+    tag: "Premium",
+    logo: "src/assets/Puravida.png",
+    bg: "src/assets/BgPuravida.jpg",
+    categoria: { id: 4 }, // Orgânicos
+  },
+  {
+    id: 22,
+    nome: "Super Shakes & Co.",
+    descricao: "Vitamina de Frutas • Leite Vegetal • Superfoods",
+    cnpj: "56.745.234/0001-55",
+    cep: "50010-000",
+    tag: "Refresque Seu Dia",
+    logo: "src/assets/SuperShakes.png",
+    bg: "src/assets/BgSuperShakes.jpg",
+    categoria: { id: 8 }, // Smoothies e Bebidas
+  },
+  {
+    id: 23,
+    nome: "Urban Bowl",
+    descricao: "Saladas no Pote • Grãos Ancestrais • Molhos Caseiros",
+    cnpj: "67.856.345/0001-44",
+    cep: "22410-003",
+    tag: "Praticidade Urbana",
+    logo: "src/assets/UrbanBowl.png",
+    bg: "src/assets/BgUrbanBowl.jpg",
+    categoria: { id: 6 }, // Bowls Fitness
+  },
+  {
+    id: 24,
+    nome: "Box Saudável",
+    descricao: "Combos Semanais • Comida de Verdade • Sem Conservantes",
+    cnpj: "78.967.456/0001-33",
+    cep: "31110-000",
+    tag: "Foco na Dieta",
+    logo: "src/assets/BoxSaudavel.png",
+    bg: "src/assets/BgBoxSaudavel.jpg",
+    categoria: { id: 1 }, // Marmitas Fitness
   }
-]
+];

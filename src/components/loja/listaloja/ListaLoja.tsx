@@ -3,16 +3,18 @@ import CardLoja from "../cardloja/CardLoja";
 
 function ListaLoja() {
   return (
-    <div className="w-full py-8">
-      
-      {/* Título */}
-      <h1 className="text-3xl font-bold text-center text-[#1F2937] mb-8">
-        Todas as lojas
-      </h1>
+    <section className="w-full py-14 px-5 lg:px-8 bg-linear-to-b from-white to-green-50/30">
+      <div className="text-center max-w-3xl mx-auto mb-14">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+          Comida saudável na velocidade da sua rotina
+        </h1>
 
-      {/* Lista */}
-      <div className="flex flex-wrap gap-6 justify-center p-6 text-[#6B7280]">
-        
+        <p className="mt-4 text-gray-500 text-lg leading-relaxed">
+          Refeições fitness rápidas, práticas e perto de você.
+        </p>
+      </div>
+
+      <div className="flex flex-wrap gap-8 justify-center">
         {bd_lojas.map((loja) => (
           <CardLoja
             key={loja.id}
@@ -20,12 +22,24 @@ function ListaLoja() {
             logo={loja.logo}
             nome={loja.nome}
             categorias={loja.descricao}
-            novo={loja.aberto}
+            tag={loja.tag}
+            categoria={
+              loja.categoria.id === 1
+                ? "Marmitas Fitness"
+                : loja.categoria.id === 2
+                  ? "Low Carb"
+                  : loja.categoria.id === 3
+                    ? "Alta Proteína"
+                    : loja.categoria.id === 4
+                      ? "Orgânicos"
+                      : loja.categoria.id === 5
+                        ? "Lanches Saudáveis"
+                        : "Bowls Fitness"
+            }
           />
         ))}
-
       </div>
-    </div>
+    </section>
   );
 }
 

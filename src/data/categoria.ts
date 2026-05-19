@@ -34,5 +34,23 @@ export const bd_categoria = [
     nome: "Bowls Fitness",
     descricao: "Bowls completos com proteínas, legumes e grãos integrais.",
     icone: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+  },
+  {
+    id: 7,
+    nome: "Pizzas Saudáveis", 
+    descricao: "Pizzas artesanais com massas funcionais, integrais e sem glúten.",
+    icone: "https://images.unsplash.com/photo-1513104890138-7c749659a591"
+  },
+  {
+    id: 8,
+    nome: "Smoothies e Bebidas", 
+    descricao: "Shakes proteicos, vitaminas, sucos naturais e smoothies refrescantes.",
+    icone: "https://images.unsplash.com/photo-1553530666-ba11a7da3888"
+  },
+  {
+    id: 9,
+    nome: "Doces Proteicos", 
+    descricao: "Sobremesas fit, doces low-carb e snacks proteicos para adoçar a dieta sem culpa.",
+    icone: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c"
   }
-]
+];
