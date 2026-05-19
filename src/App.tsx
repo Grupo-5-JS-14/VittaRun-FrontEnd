@@ -1,4 +1,3 @@
-import ListaLoja from "./components/loja/listaloja/ListaLoja";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/nav/Nav";
 import Login from "./pages/login/Login";
