@@ -1,4 +1,4 @@
-import { MapPin, Salad, User, Menu, X } from "lucide-react";
+import { MapPin, User, Menu, X } from "lucide-react";
 import { NavLink, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 

@@ -1,4 +1,3 @@
-import { Salad } from "lucide-react";
 import Grupo05 from "../grupo05/Grupo05";
 import { Link } from "react-router-dom";
 
